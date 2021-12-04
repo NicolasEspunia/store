@@ -1,0 +1,74 @@
+
+.card {
+  background-color: #000000;
+    border-radius: 25px;
+    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    display:flex;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    flex-direction: column;
+    height: 450px;
+    width:300px;
+   
+
+ }
+.picture{
+  width:260px;
+  height:240px;
+  
+}
+.boton{
+  background-color: #4CAF50;
+    border: none;
+    color: white;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+    cursor: pointer;
+}
+.card-head {
+    position: relative;
+    height: 400px;
+    background: #000000;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #8fd37b 8%, #4a63d3 83%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #8fd37b 8%, #4a63d3 83%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #8fd37b 8%, #4a63d3 83%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#8fd37b', endColorstr='#4a63d3', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    border-radius: 25px 25px 0 0;
+  }
+  .product-detail {
+    margin: 20 20;
+    padding: 25px 25px;
+    font-size: 11px;
+    color: rgb(255, 2, 2);
+  }
+  .description{
+    color: rgb(167, 90, 90);
+  }
+  .product-price {
+    position: absolute;
+    background: #11e95b;
+    padding: 7px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 200;
+    color: #fff;
+    border-radius: 7px;
+    margin-top: -13px;
+    margin-left: -5px;
+    box-shadow: -10px 20px 15px -10px rgba(17, 233, 91, 0.3);
+  }
+  
+  .product-price b {
+    margin-left: 5px;
+  }

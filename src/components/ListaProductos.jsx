@@ -1,0 +1,57 @@
+
+export const ListaProductos = [{
+    id: 1,
+    title:'monitor1',
+    description: 'monitor full hd',
+    price: 1600.00,
+    pictureURL: "https://axa.com.ar/webaxa/23586-medium_default/monitor-gamer-27-lg-27gl650f-1080p-freesync-gsync-144hz.jpg",
+    stock: 5,
+    categoria: 'monitores',
+},
+{
+    id: 2,
+    title:'monitor2',
+    description: 'monitor full hd',
+    price: 1700.00,
+    pictureURL: "https://d2ye0ltusw47tz.cloudfront.net/181998-large_default/monitor-gamer-27-acer-predator-xb271h-144hz.jpg",
+    stock: 6,
+    categoria: 'monitores',
+},
+{
+    id: 3,
+    title:'gabinetes3',
+    description: 'gabinete sentey',
+    price: 1800.00,
+    pictureURL: "https://http2.mlstatic.com/D_NQ_NP_653958-MLA45721509786_042021-W.jpg",
+    stock: 6,
+    categoria: 'gabinetes',
+},
+{
+    id: 4,
+    title:'gabinetes4',
+    description: 'gabinete sentey 2',
+    price: 1900.00,
+    pictureURL: "https://tecnocompro.com/pub/media/catalog/product/cache/f2fda30fa08589bc3d50957538fec3cf/r/e/redragon_gc-702_tailgate_gabinete_4_.png",
+    stock: 6,
+    categoria: 'gabinetes',
+},
+{
+    id: 5,
+    title:'pcgamer5',
+    description: 'pc completa',
+    price: 2000.00,
+    pictureURL: "https://lezamapc.com.ar/19380-large_default/gabinete-kit-gamer-azza-fortaleza-cfuente-350w-mousetecladoparlantes.jpg",
+    stock: 6,
+    categoria: 'pcgamer',
+},
+{
+    id: 6,
+    title:'pcgamer6',
+    description: 'pc completa 2',
+    price: 2000.00,
+    pictureURL: "https://www.fullh4rd.com.ar/img/productos/Pics_Prod/gabinete-kit-gamer-azza-fortaleza-ii-cfuente-mousetecladoparlantes-0.jpg",
+    stock: 6,
+    categoria: 'pcgamer',
+}
+]
+
