@@ -1,10 +1,20 @@
 
 import React from 'react';
 import ItemCount from '../ItemCount/ItemCount';
+import { useState } from 'react';
+import {useCartContext} from '../CartContext'
 
-export const ItemDetail = ({item}) => {
-    console.log('este es el prop de item')
-    console.log(item)
+const ItemDetail =  ( {item} ) => {
+    const [count, setCount] = useState(1)
+
+    const { cartList, agregarProducto } = useCartContext()
+
+    function onAdd(cant) {
+        setCount(cant)
+        agregarProducto( { ...item, cantidad: cant} )
+    }
+    console.log(cartList)
+
 
     return (
         
@@ -13,8 +23,11 @@ export const ItemDetail = ({item}) => {
             <h3>{item.title}</h3>
             <p>{item.description}</p>
             <p>{item.price}</p>
-            <ItemCount stock={item.stock} id={item.id} />
+            <button onClick={()=>onAdd(3) }>Agregar Carrito</button>
+                    <ItemCount onAdd={onAdd} count ={count}/>   
+
         </div>
                 
     )
 }
+export default ItemDetail

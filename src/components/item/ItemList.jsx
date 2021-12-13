@@ -1,5 +1,7 @@
 import React from 'react';
+
 import {Item} from '../item/Item';
+
 
 
 export function ItemList(props) {
@@ -11,12 +13,12 @@ export function ItemList(props) {
     //el ItemList solo mastica la información que le trae el padre (container) y la manda a Item para que la presente en pantalla.
 
     return (
-        <div style={{ width: '100%' }}>
+        <>
             {props.lista.map((item, index) => {
                 return (
                     <Item key={index} item={item} />
                 )
             })}
-        </div>
+        </>
     )
 }

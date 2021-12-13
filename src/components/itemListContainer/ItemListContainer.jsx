@@ -1,8 +1,13 @@
 import React from 'react';
 import {ItemList} from '../item/ItemList';
 import { useEffect, useState } from 'react';
-import { ListaProductos } from '../ListaProductos';
+import { ListaProductos } from '../item/ListaProductos';
 import { useParams } from 'react-router-dom';
+import Spinner from 'react-bootstrap/Spinner';
+
+
+
+
 
 
 const ItemListContainer = () =>{
@@ -53,16 +58,18 @@ const ItemListContainer = () =>{
 //seccion ternario del loading: si loading es true, es porque todavía no ejecutamos el finally, entonces la promesa esta en proceso, por lo que mostramos el loading. Si es false, ya se ejecutó el finally, por lo que ya tenemos los datos, y se lo mandamos a ItemList. Sino ItemList va a recibir un undefined (array vacío)
 
     return(
-    <>
-        
-        <div>
+        <>
             {loading 
                 ? 
-            <h1>Cargando..</h1> 
+                <h1>Cargando..<Spinner animation="border" /></h1> 
                 : 
-            <ItemList lista={productos}/> }
-        </div>
-    </>
+               
+                
+              
+                <ItemList lista={productos}/> }
+    
+    
+        </>
     )
     };
 
